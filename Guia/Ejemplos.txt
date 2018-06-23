@@ -1,7 +1,11 @@
-http://femaide.ca/
-http://www.solidaritefemmes.org/
-Logos https://studio.tailorbrands.com 
+Ejemplos :
+  http://femaide.ca/
+  http://www.solidaritefemmes.org/
+Logos :
+  https://studio.tailorbrands.com 
+  https://logojoy.com/
 
 RGB Colores
-#761C7F
-#C44185
+  #761C7F
+  #C44185
+
