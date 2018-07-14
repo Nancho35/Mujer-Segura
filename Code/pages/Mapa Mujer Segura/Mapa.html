@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa Mujer Segura</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/map-icons.css">
+    <script src="js/app.js"></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+  
+      #map {
+        height: 80%;
+        width: 80%
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 10px;
+        padding: 10px;
+             
+      }
+      h1{
+
+        color : #761C7F;
+        font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+      }
+      p{
+        color:#C44185;
+        font-family: 'Lora-Bold';
+        font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+      }
+      #map{
+        margin-left: 10%;
+        margin-top: 2%;
+      	
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Centros de Atención</h1>
+    <p>A continuación encontraras los centros de servicios y atención ubicados en la ciudad de Bogotá</p>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5C6AlQYVsgowin55IYx5hZ9YnouOBuJk&callback=initMap"
+    async defer></script>
+  </body>
+</html>
