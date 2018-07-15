@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #8c5ba5;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Registrate</h1>
+    <p>Diligencia todos los datos para crear tu cuenta.</p>
+    <hr>
+
+    <label for="email"><b>Nombres</b></label>
+    <input type="text" placeholder="Ingresar Nombres" name="Nombres" required>
+
+    <label for="email"><b>Apellidos</b></label>
+    <input type="text" placeholder="Ingresar Apellidos" name="Apellidos" required>
+
+    <label for="email"><b>Celular</b></label>
+    <input type="text" placeholder="Ingresar Celular" name="Celular" required>
+
+    <label for="email"><b>Dirección</b></label>
+    <input type="text" placeholder="Ingresar Dirección" name="Dirección" required>
+
+    <label for="email"><b>Correo</b></label>
+    <input type="text" placeholder="Ingresa Correo" name="Correo" required>
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" placeholder="Ingresar Contraseña" name="psw" required>
+
+    <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+    <input type="password" placeholder="Repetir Contraseña" name="psw-repeat" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Registrar</button>
+  </div>
+
+  <div class="container signin">
+    <p>Ya tienes una cuenta? <a href="#">Ingresa aquí</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
