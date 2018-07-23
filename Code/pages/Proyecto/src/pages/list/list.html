@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -9,9 +9,11 @@
 
 <ion-content>
 <ion-card>
-  <h1>Test de Vulneravilidad</h1>
-  <img src="../../assets/imgs/logo.png" alt="">
-  <p>Es una herramienta digital que te permite identificar las señaes de riesgo de ciolencia de genero en tu relación de pareja </p>
-  <button ion-button color="secondary">Comenzar</button>
+  <img src="../../assets/imgs/semaforo.png" alt="semaforo">
+  <p class= "pieImg">Es una herramienta digital que te permite identificar las señales de riesgo de violencia de genero, en tu relación de pareja </p>
+  <br>
+  
+  
+  <button ion-button color="secondary" (click)="Comenzar()">Comenzar</button>
 </ion-card>
 </ion-content>
