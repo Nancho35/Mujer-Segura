@@ -5,19 +5,27 @@
 <title>HTML4</title>
 <style>
 body {
-    font-family: Verdana,sans-serif;
-    font-size: 0.9em;
+    background: #ffe5fd;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffe5fd', EndColorStr='#ffebfd');
+	background: -moz-linear-gradient(top, #ffe5fd, #ffe5fd);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffe5fd), to(#ffe5fd));
+	background: -o-linear-gradient(#ffe5fd, #ffe5fd);
+	background: linear-gradient(top, #ffe5fd, #ffe5fd);
+	width: 100%;
+	height: 100%;
 }
 
 header#usuarioencabezado
 {
     padding: 10px;
     color: white;
-    text-align:right;
+    text-align:light;
 }
+
+
 header#encabezado
 {
-  padding: 10px;
+  padding: 1px;
   color: white;
   background-color: #C44185;
   text-align:right;
@@ -37,43 +45,61 @@ div#contenido {
 div.article {
     margin: 5px;
     padding: 60px;
-    background-color: white;
+    background-color: #ffe5fd;
 }
 
 div#menuprincipal ul {
     padding: 0;
-
 }
 
-div#menuprincipal ul li {
+.nav li a{
+				
+				color:#FFFFFF;
+				text-decoration:none;
+				padding:18px 20px;
+				
+			}
+			
+div#menuprincipal a:hover {
+
+background-color: #580052;
+}
+
+div#menuprincipal ul li{
     display: inline;
     margin: 5px;
 }
 </style>
 </head>
-<body>
+<body >
 <header id="usuarioencabezado">
-<div id="login">
-<ul class="nav">
-    <li><a href="">Ingresar</a></li>
-    <li><a href="">Registrate</a></li>
-</ul>
+<img src="imagenes/Logo.jpg" width=150px align:right>
 
-
-<div>
 </header>
 <header id="encabezado">
 <div id="menuprincipal">
   <ul class="nav">
 
-    <li><a href="">Home</a></li>
+    <li><a href="" >Home</a></li>
+	
     <li><a href="">Nosotros</a></li>
+
     <li><a href="">E-Learning</a></li>
+	
     <li><a href="">Centros de Atención</a></li>
+
     <li><a href="">Test de Riesgo</a></li>
-    <li><a>Buscar:</a></li>
-    <li> <input type="text" id="cajabusqueda"><li>
+	
+    <li><a href="">Buscar:</a></li>
+    <li> <input type="text" id="cajabusqueda"><li>  
+	<li> <li>  
+
+	<li><a onclick="document.getElementById('contenido').innerHTML=Date()">Ingresar</a></li>
+	<li> <li> 
+    <li><a href="">Registrate</a></li>
   </ul>
+  
+
 
 </header>
 
@@ -82,7 +108,7 @@ div#menuprincipal ul li {
 <article id="contenido">
   <div class="article">
      <h2>Zona de Trabajo</h2>
-     <p>Zona de Contenidos</p>
+     <p id="demo">Zona de Contenidos</p>
    </div>
 
 </article>
@@ -129,3 +155,4 @@ div#menuprincipal ul li {
 
 </body>
 </html>
+
