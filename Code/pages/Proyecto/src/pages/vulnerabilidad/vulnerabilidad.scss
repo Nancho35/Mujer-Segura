@@ -1,0 +1,55 @@
+page-vulnerabilidad {
+        body{
+            font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+            color: #761C7F;
+          
+        }
+        ion-card{
+           text-align: center;
+           width: 80%;
+           height: 90%;
+           padding-left: 10%;
+           padding-right: 10%;
+    
+    }
+    
+    p,img{
+        font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+        color: #761C7F;
+        padding-top: 10%;
+     
+    }
+    
+    img{
+        max-width: 80%;
+        max-height: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+      padding-top: 15%; 
+      padding-bottom: 15%; 
+      color: #C44185;
+      text-align: left;
+      
+    }
+    
+    .pieImg{
+        color: #761C7F;
+        font-weight: bold;
+
+    }
+
+    ion-label{
+        font-size: 70%;
+
+    }
+    ion-button{
+        margin-top: 20%;
+    }
+    
+    }
+    
+    
+        

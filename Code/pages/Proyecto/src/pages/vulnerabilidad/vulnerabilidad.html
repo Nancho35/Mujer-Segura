@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Test de Vulnerabilidad</ion-title>
+    </ion-navbar>
+  </ion-header>
+ 
+<ion-content padding>
+  <ion-card text-wrap>
+    <img src="../../assets/imgs/logo.png" alt="">
+    <h2>Relación de pareja</h2>
+    <ion-row radio-group [(ngModel)]="Respuestas">
+      <ion-item>
+        <ion-label>Te prohibe estudiar o trabajar</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Respeta tus decisiones</ion-label>
+        <ion-radio value="2"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Maneja tus claves de redes sociales, correo, tarjetas de credito</ion-label>
+        <ion-radio value="3"></ion-radio>
+      </ion-item>
+  </ion-row>
+  <button ion-button color="secondary" (click)="Siguiente()">Siguiente</button>
+  </ion-card>
+</ion-content>
