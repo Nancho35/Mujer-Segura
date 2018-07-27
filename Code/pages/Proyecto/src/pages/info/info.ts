@@ -3,13 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SexualPage} from '../sexual/sexual';
 import { VulnerabilidadPage} from '../vulnerabilidad/vulnerabilidad';
 import { PsicológicoPage} from '../psicológico/psicológico';
-
-/**
- * Generated class for the InfoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FisicaPage } from '../fisica/fisica'
 
 @IonicPage()
 @Component({
@@ -21,7 +15,7 @@ export class InfoPage {
   
   tab1Root = SexualPage;
   tab2Root = PsicológicoPage;
-  tab3Root = VulnerabilidadPage;
+  tab3Root = FisicaPage;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

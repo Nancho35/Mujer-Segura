@@ -18,7 +18,7 @@ export class LlamarPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private callNumber: CallNumber) {
     console.log('ionViewDidLoad LlamarPage');
-    this.callNumber.callNumber("18001010101", true)
+    this.callNumber.callNumber("165", true)
   .then(res => console.log('Launched dialer!', res))
   .catch(err => console.log('Error launching dialer', err));
     

@@ -10,6 +10,7 @@ import { InfoPageModule } from '../pages/info/info.module';
 import { LlamarPageModule } from '../pages/llamar/llamar.module';
 import { SexualPageModule } from '../pages/sexual/sexual.module';
 import { PsicológicoPageModule } from '../pages/psicológico/psicológico.module';
+import { FisicaPageModule} from '../pages/fisica/fisica.module';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,7 +30,8 @@ import { CallNumber } from '@ionic-native/call-number';
     InfoPageModule,
     LlamarPageModule,
     SexualPageModule,
-    PsicológicoPageModule
+    PsicológicoPageModule,
+    FisicaPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
