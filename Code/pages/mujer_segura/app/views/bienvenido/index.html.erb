@@ -1,10 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<title>HTML4</title>
-<style>
-body {
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa Mujer Segura</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/map-icons.css">
+    <script src="js/app.js"></script>
+    <style>
+	body {
     background: #ffe5fd;
 	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffe5fd', EndColorStr='#ffebfd');
 	background: -moz-linear-gradient(top, #ffe5fd, #ffe5fd);
@@ -15,25 +18,21 @@ body {
 	height: 100%;
 }
 
-header#usuarioencabezado
-{
-    padding: 10px;
-    color: white;
-    text-align:light;
-}
 
 
 header#encabezado
 {
   padding: 1px;
   color: white;
-  background-color: #C44185;
-  text-align:right;
+  background-color: #761C7F;
+  text-align:left;
+  font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
 }
  footer#piedepagina {
     padding: 30px;
     color: white;
-    background-color: #C44185;
+    background-color: #761C7F;
+	font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
 }
 
 div#contenido {
@@ -56,7 +55,7 @@ div#menuprincipal ul {
 				
 				color:#FFFFFF;
 				text-decoration:none;
-				padding:18px 20px;
+				padding:18px 10px;
 				
 			}
 			
@@ -69,17 +68,38 @@ div#menuprincipal ul li{
     display: inline;
     margin: 5px;
 }
-</style>
-</head>
-<body >
-<header id="usuarioencabezado">
-<img src="imagenes/Logo.jpg" width=150px align:right>
+.td{
+width:230px;
+align:center;
 
-</header>
+}
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+  
+      #map {
+        height: 80%;
+        width: 80%
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 1px;
+       
+      }
+     
+      #map{
+        margin-left: 10%;
+        margin-top: 2%;
+      	
+      }
+    </style>
+  </head>
+  <body>
+  
 <header id="encabezado">
 <div id="menuprincipal">
   <ul class="nav">
-
+<li><img src="imagenes/Logo.png"></li>
     <li><a href="" >Home</a></li>
 	
     <li><a href="">Nosotros</a></li>
@@ -90,69 +110,56 @@ div#menuprincipal ul li{
 
     <li><a href="">Test de Riesgo</a></li>
 	
-    <li><a href="">Buscar:</a></li>
+    <li>Buscar:</li>
     <li> <input type="text" id="cajabusqueda"><li>  
-	<li> <li>  
 
 	<li><a onclick="document.getElementById('contenido').innerHTML=Date()">Ingresar</a></li>
-	<li> <li> 
+
     <li><a href="">Registrate</a></li>
   </ul>
   
 
 
-</header>
+</header id>
 
+    <h1>Centros de Atención</h1>
+    <p>A continuación encontraras los centros de servicios y atención ubicados en la ciudad de Bogotá</p>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5C6AlQYVsgowin55IYx5hZ9YnouOBuJk&callback=initMap"
+    async defer></script>
 
-
-<article id="contenido">
-  <div class="article">
-     <h2>Zona de Trabajo</h2>
-     <p id="demo">Zona de Contenidos</p>
-   </div>
-
-</article>
-
-<footer id="piedepagina">
+	<footer id="piedepagina">
 <table id="tablapiepagina">
   <tr>
-<td><p>NOSOTROS<P><td>
-<td><p>EN MUJER SEGURA<P><td>
-<td><p>DATOS DE CONTACTO<P><td>
-  <td><p>DATOS DE CONTACTO<P><td>
+<td><p>NOSOTROS<P><br>
+Somos una plataforma que mujeres<br>
+sufren algun tipo de violencia,<br>
+de   tal protección  y seguridad<br>
+ante la sociedad.<br>
+</td>
 
-  </tr>
-<tr>
+<td><p>EN MUJER SEGURA<P><br>
+- Preguntas frecuentes<br>
+- Politicas de privacidad<br>
+- Contactanos<br>
+- Terminos y condiciones<br>
+</td>
+<td><p>DATOS DE CONTACTO<P><br>
+Av dorado #69-79
+    Torre 2 Piso 16<br>
+    Telefonos:(571) 3169001<br>
+</td>
   <td>
-    Somos una plataforma que<br>
-    mujeres sufren algun tipo<br>
-    de violencia, de   tal<br>
-    protección    y seguridad<br>
-    ante la sociedad.<br>
-  </td>
-
-  <td>
-  <li><p>Preguntas frecuentes</p></li>
-  <li><p>Politicas de provacidad</p></li>
-  <li><p>Contactanos</p></li>
-  <li><p>Terminos y condiciones</p></li>
-  </td>
-
-
-  <td>
-    <p>Av dorado #69-79</P>
-    <p> Torre 2 Piso 16</p>
-    <p>Telefonos:(571) 3169001</p>
-
-  <td>
-    <td>
     <p>Enlaces</p>
-    <td>
-
+    </td>
   </tr>
+
 </table>
 </footer>
-
-</body>
+	
+	
+	
+	
+	
+  </body>
 </html>
-
