@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the VulnerabilidadPage page.
+ * Generated class for the NoticiasPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,33 +10,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-vulnerabilidad',
-  templateUrl: 'vulnerabilidad.html',
+  selector: 'page-noticias',
+  templateUrl: 'noticias.html',
 })
+export class NoticiasPage {
 
-
-export class VulnerabilidadPage {
-  
+  cards: any;
+  category: string = 'gear';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.cards = new Array(10);
   }
-
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad VulnerabilidadPage');
+    console.log('ionViewDidLoad NoticiasPage');
   }
-
-  Alta() {
-    console.log('Alta');
-  }
-
-  Media() {
-    console.log('Media');
-  }
-
-  Baja() {
-    console.log('Baja');
-  }
-
-
 
 }

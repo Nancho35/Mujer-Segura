@@ -17,12 +17,6 @@ export class ListPage {
 
   }
 
-  launchDialer(n:string){
-    this.callNumber.callNumber(n, true)
-    .then(() => console.log('Launched dialer!'))
-    .catch(() => console.log('Error launching dialer'));
-}
-
 //Linkiar a nueva pagina
   Comenzar() {
     this.navCtrl.push(VulnerabilidadPage);

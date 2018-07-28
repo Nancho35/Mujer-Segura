@@ -1,5 +1,24 @@
 page-fisica {
-    p{
-        color:white;
+    ion-card{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        border-radius: 10px;
+    }
+    .card-md h1  {
+        color: #C44185;
+        text-align: left;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        
+      }
+
+          
+      .card-md p,ul{
+        font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+        color: #761C7F;
+
+     
     }
 }

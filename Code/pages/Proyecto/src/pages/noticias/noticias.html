@@ -1,0 +1,52 @@
+ 
+  <ion-header>
+      <ion-navbar color="primary" >
+        <button ion-button menuToggle color="light">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Noticias y Eventos</ion-title>
+      </ion-navbar>
+    </ion-header> 
+
+    
+  <ion-content fullscreen>
+  
+      <ion-card *ngFor="let card of cards">
+  
+        <ion-item>
+          <ion-avatar item-left>
+            <img src="https://avatars.io/twitter/nancho35" />
+          </ion-avatar>
+          <h2>Hernán García</h2>
+          <p>Julio 24, 2018</p>
+        </ion-item>
+  
+        <img src="assets/imgs/mujer.jpg" />
+  
+        <ion-card-content>
+            Este 8 de marzo de 2018, millones de mujeres de 178 países del mundo, incluyendo a Colombia, adoptando nuevamente el color violeta como símbolo de resistencia de las mujeres, se unirán para reconocer ...
+        </ion-card-content>
+  
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12 Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comments</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+              11h ago
+            </ion-note>
+          </ion-col>
+        </ion-row>
+  
+      </ion-card>
+  
+  </ion-content>

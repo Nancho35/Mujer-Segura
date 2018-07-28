@@ -3,10 +3,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number';
 import { HomePage } from "../home/home";
-
-
 /**
- * Generated class for the FisicaPage page.
+ * Generated class for the PsicologicoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,13 +12,11 @@ import { HomePage } from "../home/home";
 
 @IonicPage()
 @Component({
-  selector: 'page-fisica',
-  templateUrl: 'fisica.html',
+  selector: 'page-psicologico',
+  templateUrl: 'psicologico.html',
 })
-export class FisicaPage {
+export class PsicologicoPage {
 
-  cards: any;
-  category: string = 'gear';
  
   constructor(public navCtrl: NavController, public navParams: NavParams,private callNumber: CallNumber,public app: App) {
   }

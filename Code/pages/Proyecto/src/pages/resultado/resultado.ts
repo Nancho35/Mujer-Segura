@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the VulnerabilidadPage page.
+ * Generated class for the ResultadoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,33 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-vulnerabilidad',
-  templateUrl: 'vulnerabilidad.html',
+  selector: 'page-resultado',
+  templateUrl: 'resultado.html',
 })
+export class ResultadoPage {
 
-
-export class VulnerabilidadPage {
-  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad VulnerabilidadPage');
+    console.log('ionViewDidLoad ResultadoPage');
   }
-
-  Alta() {
-    console.log('Alta');
-  }
-
-  Media() {
-    console.log('Media');
-  }
-
-  Baja() {
-    console.log('Baja');
-  }
-
-
 
 }

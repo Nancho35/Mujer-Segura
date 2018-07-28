@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { InfoPage } from '../pages/info/info';
 import { LlamarPage } from '../pages/llamar/llamar';
+import { NoticiasPage } from '../pages/noticias/noticias';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +28,8 @@ export class MyApp {
       { title: 'Centros de Atención', component: HomePage },
       { title: 'Test de Vulnerabilidad', component: ListPage },
       { title: 'En caso de Violencia', component: InfoPage },
-      { title: 'Linea de Emergencia', component: LlamarPage }
+      { title: 'Linea de Emergencia', component: LlamarPage },
+      { title: 'Noticias', component: NoticiasPage }
     ];
 
   }

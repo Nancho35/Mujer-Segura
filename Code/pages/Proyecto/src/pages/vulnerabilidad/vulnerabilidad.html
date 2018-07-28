@@ -10,21 +10,25 @@
 <ion-content padding>
   <ion-card text-wrap>
     <img src="assets/imgs/logo.png" alt="">
-    <h2>Relación de pareja</h2>
-    <ion-row radio-group [(ngModel)]="Respuestas">
-      <ion-item>
-        <ion-label>Te prohibe estudiar o trabajar</ion-label>
-        <ion-radio value="1"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Respeta tus decisiones</ion-label>
-        <ion-radio value="2"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Maneja tus claves de redes sociales, correo, tarjetas de credito</ion-label>
-        <ion-radio value="3"></ion-radio>
-      </ion-item>
-  </ion-row>
-  <button ion-button color="secondary" (click)="Siguiente()">Siguiente</button>
+    <h1>Relación de pareja</h1>
+ 
+    <ion-list radio-group [(ngModel)]="Preguntas" (change)="petChange($event)">
+        <ion-item>
+          <ion-radio (ionSelect)="Alta()"></ion-radio>
+          <ion-label>Te prohibe estudiar o trabajar</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio (ionSelect)="Baja()"></ion-radio>
+          <ion-label>Respeta tus decisiones</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio (ionSelect)="Media()"></ion-radio>
+          <ion-label>Maneja tus claves de redes sociales, correo, tarjetas de creditoles</ion-label>
+        </ion-item>
+      </ion-list>
+
+  <!-- <div class="boton">
+  <button class = "boton" ion-button color="secondary" (click)="Siguiente()">Siguiente</button>
+</div> -->
   </ion-card>
 </ion-content>

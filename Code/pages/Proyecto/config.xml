@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Proyecto</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="com.MujerSegura" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Mujer Segura</name>
+    <description>Mujer Segura es una aplicación móvil que te permite conocer los centros de atención de tu ciudad, conoce el riesgo por medio del test de vulnerabilidad.</description>
+    <author email="hernandario35@gmail.com" href="https://twitter.com/Nancho35">Mujer Segura Team</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -83,5 +83,5 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
     <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
     <allow-navigation href="http://192.168.0.34:8102" />
-    <engine name="android" spec="7.0.0" />
+    <engine name="android" spec="^7.0.0" />
 </widget>

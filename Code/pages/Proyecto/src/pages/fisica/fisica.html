@@ -5,29 +5,41 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar color="primary">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Violencia Física</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content>
+    <ion-card>
+    <h1>Tipo de violencia :</h1>
+  <p>Se puede expresar a través de golpes,empujones,puños,bofetadas,patadas,quemaduras oataques conarmas, objetos,ácidos u otroslíquidos.</p>
+  <h1>Donde denunciar :</h1>
+  <p>Policía judicial,Comisarias de familia y Fiscalía general de la nación.</p>
+  <button ion-button color="secondary" (click)="Buscar($event)">
+      <ion-label>Buscar</ion-label>
+      <ion-icon name = "pin"></ion-icon>
     </button>
-    <ion-title>Violencia Fisica</ion-title>
-  </ion-navbar>
-</ion-header>
+  <h1>Que hacer para denunciar</h1>
+<ul>
+  <li>1. Debes tener original o copia de tu cedula de ciudadanía o tarjeta de propiedad. </li>
+  <li>2. Contar con dinero para movilizarte hacia el punto de atención mas cercano. </li>
+  <li>3. Guarda copia de las llaves de tu hogar. </li>
+  <li>4. Comunicar a alguien cercano sobre tu situación. </li>
+  <li>5. Busca atención medica en cualquier servicio de urgencias. </li>
+  <li>6. Pide protección en la Fiscalía General de la nación.</li>
 
-
-<ion-content padding>
-  <h2>Tipo de violencia :</h2>
-<p>Se puede expresar a través de golpes, empujones, puños,bofetadas, patadas, quemaduras o ataques con armas, objetos, ácidos u otros líquidos.
- 
-</p>
-<h2>Donde denunciar :</h2>
-<p>Policía judicial, Comisarias de familia y Fiscalía general de la nación.</p>
-<h2>Que hacer para denunciar</h2>
-<p>1. Debes tener original o copia de tu cedula de ciudadanía o tarjeta de propiedad.
-  2. Contar con dinero para movilizarte hacia el punto de atención mas cercano.
-  3. Guarda copia de las llaves de tu hogar.
-  4. Comunicar a alguien cercano sobre tu situación.
-  5. Busca atención medica en cualquier servicio de urgencias.
-  6. Pide protección en la Fiscalía General de la nación.</p>
-    <h2>Lineas de Atención</h2>
-    <p>155</p>
-</ion-content>
+</ul>
+      <h1>Lineas de Atención</h1>
+      <p>Línea 155, orientación a mujeres víctimas</p>
+      <button ion-button color="secondary" (click)="Llamar()">
+        <ion-label>Llamar</ion-label>
+        <ion-icon name = "call"></ion-icon>
+      </button>
+    </ion-card>
+  </ion-content>
+  
