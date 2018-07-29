@@ -1,42 +1,28 @@
 page-home {
-  
-
-    ion-content{
-    background: rgb(229, 227, 223);
-    #map {
-      width: 99%;
-      height: 99%;
-      opacity: 0;
-      transition: opacity 150ms ease-in;
-      display: block;
-      &.show-map{
-        opacity: 1;
-        
-      }
+  #map {
+      width: 100%;
+      height: 100%;     
     }
-  }
-
-  p,h1,ion-header,ion-content,ion-title{
-    
-    color: #761C7F;
-    font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
-  }
-
-
 
   
-/*   h1, .toolbar-title {
+    .infoWindow{
+      h1{
 
-    color: #761C7F;
-    font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+        color : #761C7F;
+        font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+      }
+      p{
+        color:#C44185;
+        font-family: 'Lora-Bold';
+        font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
+      }
+
+    }
+
 
   }
+     
 
-  p {
-    color: #C44185;
-    font-family: 'Segoe UI Semilight', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif;
-  } */
 
-  
-}
+
 
