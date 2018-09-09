@@ -17,6 +17,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Geolocation } from '@ionic-native/geolocation';
 import { CallNumber } from '@ionic-native/call-number';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { NoticiaServiceProvider } from '../providers/noticia-service/noticia-service';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { CallNumber } from '@ionic-native/call-number';
     SexualPageModule,
     PsicologicoPageModule,
     FisicaPageModule,
-    NoticiasPageModule
+    NoticiasPageModule,
+    HttpClientModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +51,8 @@ import { CallNumber } from '@ionic-native/call-number';
     SplashScreen,
     Geolocation,
     CallNumber,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    NoticiaServiceProvider
   ]
 })
 export class AppModule {}

@@ -84,4 +84,9 @@
     <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
     <allow-navigation href="http://192.168.0.34:8102" />
     <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-googlemaps" spec="^2.4.2">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyCYegTJ9zfmLRJi2CxRTv1NuQmGbX406DA" />
+        <variable name="PLAY_SERVICES_VERSION" value="15.0.1" />
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
+    </plugin>
 </widget>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { NoticiaServiceProvider} from '../../providers/noticia-service/noticia-service';
 /**
  * Generated class for the NoticiasPage page.
  *
@@ -15,14 +15,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NoticiasPage {
 
+  users: any;
+  salida: any[]=[];
+  
   cards: any;
   category: string = 'gear';
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.cards = new Array(10);
+
+  constructor(public navCtrl: NavController, public NoticiaServiceProvider: NoticiaServiceProvider) {
+    //this.cards = new Array(10);
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NoticiasPage');
+    this.NoticiaServiceProvider.getNoticias()
+    .then(data => {
+      this.users = data;
+      this.salida = this.users;
+      console.log(this.users);
+    });
   }
 
 }

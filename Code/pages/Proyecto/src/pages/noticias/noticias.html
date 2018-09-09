@@ -10,8 +10,53 @@
 
     
   <ion-content fullscreen>
-  
-      <ion-card *ngFor="let card of cards">
+      <ion-card inset *ngFor="let user of salida ">
+          <ion-item >
+              <ion-avatar item-left>
+                  <img [src]="user.avatar" />
+                </ion-avatar>
+            <h2 class="autor">{{user.autor}}</h2>
+            <p>{{user.fecha | date : format : timezone}}</p>
+           
+          </ion-item>
+          <h2 class="titulo">{{user.titulo}}</h2>
+          <img [src]="user.imagen" /> 
+          <ion-card-content>
+              <p>{{user.resumen}}</p>
+          </ion-card-content>
+          <ion-row>
+              <ion-col>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <div>{{user.likes}} Likes</div>
+                </button>
+              </ion-col>
+              <ion-col>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="text"></ion-icon>
+                  <div>4 Comments</div>
+                </button>
+              </ion-col>
+            </ion-row>
+          <ion-row>
+              <ion-col center text-center>
+                  <ion-note>
+                      <a [attr.href]="user.sitio_web"
+                      [attr.aria-controls]="user.sitio_web"
+                      role="tab"
+                      data-toggle="tab">
+                     {{"Ver Mas"}}
+                   </a>
+                      <!--<button ion-button icon-left clear small color="secondary" (click)=" window.open(url);">
+                          <ion-label>Ver mas</ion-label>
+                          <ion-icon name="arrow-round-forward"></ion-icon>
+                        </button>-->
+                  </ion-note>
+                </ion-col>
+            </ion-row>
+
+        </ion-card>
+      <!-- <ion-card *ngFor="let card of cards">
   
         <ion-item>
           <ion-avatar item-left>
@@ -47,6 +92,6 @@
           </ion-col>
         </ion-row>
   
-      </ion-card>
+      </ion-card> -->
   
   </ion-content>
