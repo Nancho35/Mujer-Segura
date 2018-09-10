@@ -20,11 +20,12 @@ import { CallNumber } from '@ionic-native/call-number';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { NoticiaServiceProvider } from '../providers/noticia-service/noticia-service';
+import { HomePageModule } from '../pages/home/home.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+   // HomePage,
     ListPage
   ],
   imports: [
@@ -38,7 +39,8 @@ import { NoticiaServiceProvider } from '../providers/noticia-service/noticia-ser
     FisicaPageModule,
     NoticiasPageModule,
     HttpClientModule,
-    HttpModule
+    HttpModule,
+    HomePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -9,6 +9,20 @@
 
 <ion-content>
 
-  <div #map id="map"></div>
+  <div id="map_canvas">
+   <!-- <div id="div_button">
+      <button ion-button color="primary">
+        <a  class="not-active" href="https://wa.me/+573007551846?text=Hola!%20,tengo%20una%20denuncia%20">Solicita Ayuda - </a>
+        <ion-icon name="ios-warning-outline"></ion-icon>
+      </button>
+    </div>-->
+
+    <div id="div_button">
+        <button ion-button color="primary" (click)="Ayuda($event)">
+            <ion-label>Solicita Ayuda -</ion-label>
+          <ion-icon name="ios-warning-outline"></ion-icon>
+        </button>
+      </div>
+  </div>
 
 </ion-content>
