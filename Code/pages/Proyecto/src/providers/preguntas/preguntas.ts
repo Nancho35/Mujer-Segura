@@ -2,22 +2,22 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 /*
-  Generated class for the NoticiaServiceProvider provider.
+  Generated class for the PreguntasProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
 @Injectable()
-export class NoticiaServiceProvider {
+export class PreguntasProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello NoticiaServiceProvider Provider');
+    console.log('Hello PreguntasProvider Provider');
   }
 
-  getNoticias(){
+  getPreguntas(){
     
     return new Promise(resolve => {
-      this.http.get('https://frozen-shelf-75757.herokuapp.com/noticia.json').subscribe(data => {
+      this.http.get('https://test-api-hernan.herokuapp.com/answers.json').subscribe(data => {
         resolve(data);
       }, err => {
         console.log(err);
@@ -26,5 +26,8 @@ export class NoticiaServiceProvider {
     
   }
 
+  radioChecked($event){
+    console.log($event);
+  }
 
 }
