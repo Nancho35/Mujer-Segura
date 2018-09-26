@@ -37,7 +37,6 @@ export class NoticiasPage {
       .then(data => {
         this.users = data;
         this.salida = this.users;
-        console.log(this.users);
       });
       loader.dismiss();
     });

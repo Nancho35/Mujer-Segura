@@ -23,6 +23,7 @@ export class VulnerabilidadPage {
   question: any;
   salida: any[] = [];
   contador: number = 1
+  peso_respuesta: number = 0
 
   cards: any;
   category: string = 'gear';
@@ -43,25 +44,23 @@ export class VulnerabilidadPage {
         .then(data => {
           this.question = data;
           this.salida = this.question;
-          //console.log(this.question);
         });
       loader.dismiss();
     });
   }
 
   get filterById() {
-
-    console.log(this.contador);
-    console.log(this.salida.filter(x => x.id == this.contador));
     return this.salida.filter(x => x.id == this.contador);
-
-
   }
 
-  mcqAnswer(questionID, answer) {
+  mcqAnswer(value) {
+
+    this.peso_respuesta  += +value;
+
     if (this.contador == this.salida.length) {
-      let nav = this.app.getRootNav();
-      nav.push(ResultadoPage);
+      this.navCtrl.push(ResultadoPage, {
+        parametro1: this.peso_respuesta,
+      })
     }
     else {
       this.contador = this.contador + 1;

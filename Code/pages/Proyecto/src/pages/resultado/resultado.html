@@ -15,19 +15,28 @@
 
 
 <ion-content >
-  <h2>probando...</h2>
-  <img src="assets/imgs/semaforo.png" alt="semaforo">
+  <ion-card>
+      <img src="{{imagePath}}">
+
+    <h1> {{TextoResultado}}</h1>
+
+<div id="lista_botones">
+  <p>Linea de Orientación</p>
   <button ion-button color="secondary" (click)="Llamar()">
     <ion-label>Llamar</ion-label>
     <ion-icon name = "call"></ion-icon>
   </button>
+  <p>Busca en el mapa Centros de Atención</p>
   <button ion-button color="secondary" (click)="Buscar($event)">
     <ion-label>Buscar</ion-label>
     <ion-icon name = "pin"></ion-icon>
   </button>
+  <p>Whatsapp de Orientación</p>
   <button ion-button color="secondary">
-    <a  class="not-active" href="https://wa.me/+573007551846?text=Hola!%20,tengo%20una%20denuncia%20">Whatsapp  </a>
+    <a  class="not-active" href="https://wa.me/+573007551846?text=Hola!%20,tengo%20una%20denuncia%20">Whatsapp .</a>
     <ion-icon name="chatbubbles"></ion-icon>
   </button>
+</div>
+</ion-card>
 </ion-content>
 

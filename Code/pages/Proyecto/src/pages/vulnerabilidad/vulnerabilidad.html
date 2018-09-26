@@ -8,32 +8,33 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card text-wrap *ngFor="let question of filterById; let i= index;">
+  <!--<ion-card text-wrap *ngFor="let question of filterById; let i= index;">-->
+      <ion-card text-wrap *ngFor="let question of filterById">
     <img src="assets/imgs/logo.png" alt="">
 
-    <ion-list radio-group >
+    <ion-list radio-group  (ionChange)="mcqAnswer($event)">
       <ion-list-header>
-        {{question.question_text}}
+          <h1>Relación de pareja</h1>
       </ion-list-header>
     
       <ion-item>
-        <ion-label>{{question.optionA}}</ion-label>
-        <ion-radio  value="1" (ionSelect)="mcqAnswer(i,1)"></ion-radio>
+        <ion-label class="my-label">{{question.optionA}}</ion-label>
+        <ion-radio  value={{question.valueA}} ></ion-radio>
       </ion-item>
     
       <ion-item>
-        <ion-label>{{question.optionB}}</ion-label>
-        <ion-radio  value="2" (ionSelect)="mcqAnswer(i,1)"></ion-radio>
+        <ion-label class="my-label">{{question.optionB}}</ion-label>
+        <ion-radio  value={{question.valueB}} ></ion-radio>
       </ion-item>
     
       <ion-item>
-        <ion-label>{{question.optionC}}</ion-label>
-        <ion-radio  value="3" (ionSelect)="mcqAnswer(i,1)"></ion-radio>
+        <ion-label class="my-label">{{question.optionC}}</ion-label>
+        <ion-radio  value={{question.valueC}} ></ion-radio>
       </ion-item>
     
       <ion-item>
-        <ion-label>{{question.optionD}}</ion-label>
-        <ion-radio  value="4" (ionSelect)="mcqAnswer(i,1)"> </ion-radio>
+        <ion-label class="my-label">{{question.optionD}}</ion-label>
+        <ion-radio value={{question.valueD}} (ionSelect)="mcqAnswer(i,1)"> </ion-radio>
       </ion-item>
     </ion-list>
 

@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 export class PreguntasProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello PreguntasProvider Provider');
+ 
   }
 
   getPreguntas(){
@@ -26,8 +26,5 @@ export class PreguntasProvider {
     
   }
 
-  radioChecked($event){
-    console.log($event);
-  }
 
 }
